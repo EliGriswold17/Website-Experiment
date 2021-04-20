@@ -1,0 +1,156 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+
+h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+h2{
+    padding-left: 20px;
+}
+
+ul{
+    padding-left: 30px;
+}
+
+#game{
+    width: 500px;
+    height: 200px;
+    border: 5px ridge darkslateblue;
+    margin: auto;
+    background-color: lightcyan;
+
+    /* Tried to make the play area look like a fish tank */
+    
+}
+
+#character{
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border-radius: 50%;
+    position: relative;
+    top: 150px;
+}
+
+.animate{
+    animation: jump 350ms;
+}
+
+@keyframes jump{
+    0%{top: 150px;}
+    45%{top: 100px;}
+    55%{top: 100px;}
+    100%{top: 170px;}
+
+/*here, it pushes the bubble down below the grid which might sound wierd,
+but it looked like the bubble was bouncing and I thought that was cool*/
+
+/* I also changed some values here from the original to make the character behave
+more like a bouncing ball, as the original game looked a little janky */
+}
+
+#block{
+    width: 20px;
+    height: 30px;
+    background-color: lightcoral;
+    position: relative;
+    top: 120px;
+    left: 480px;
+    animation: block 1.5s infinite linear;
+}
+
+@keyframes block{
+    0%{left: 480px}
+    100%{left:-40px}
+}
+
+/* Below: started out trying to add a rock through some crude CSS art but it turned
+out looking more like a kid peeking through the tank so I ran with that*/
+
+#rock{
+    width: 60px;
+    height: 40px;
+    background-color: tan;
+    opacity: 0.6;
+    position: relative;
+    top: 80px;
+    left: 400px;
+}
+
+#coral{
+    width: 7px;
+    height: 18px;
+    background-color: lightcoral;
+    opacity: 0.5;
+    position: relative;
+    left: 445px;
+    top: 22px;
+}
+
+#coral2{
+    width: 7px;
+    height: 23px;
+    background-color: lightcoral;
+    opacity: 0.5;
+    position: relative;
+    left: 425px;
+    top: -1px;
+}
+
+#coral3{
+    width: 7px;
+    height: 18px;
+    background-color: lightcoral;
+    opacity: 0.5;
+    position: relative;
+    left: 412px;
+    top: -19px;
+}
+
+#eye1{
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    opacity: 0.9;
+    position: relative;
+    left: 412px;
+    top: -5px;
+}
+
+#eye2{
+    width: 7px;
+    height: 7px;
+    background-color: black;
+    opacity: 0.9;
+    position: relative;
+    left: 430px;
+    top: -12px;
+}
+
+
+/* there's probably and easier way to organize the spacing of the kid but i wanted to 
+finish the site instead of fuessing and checking all night */
+
+#score{
+    text-align: center;
+}
+
+#shoutout{
+    padding-left: 40px;
+}
+
+#highscore{
+    text-align: center;
+}
+
+/* source code from KnifeCircus, changed properties to better suit my version of the game 
+(his channel link is on the button) */
+
+
+
